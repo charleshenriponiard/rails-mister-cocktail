@@ -4,6 +4,9 @@
 
 
 <div class="container">
+  <%= cl_image_tag @cocktail.picture, height: 300, width: 400, crop: :fill %>
+
+
 
   <% @cocktail.doses.each do |dose| %>
     <div class="card">
